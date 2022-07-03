@@ -2,4 +2,6 @@
     <string name="app_name">Tic Tac Toe</string>
     <string name="Heading">Welcome to Tic Tac Toe</string>
     <string name="grid">game grid</string>
+    <string name="cross">our cross</string>
+    <string name="circle">our circle</string>
 </resources>
