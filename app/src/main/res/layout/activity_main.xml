@@ -52,7 +52,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:contentDescription="@string/img1"
+                android:onClick="playerTap"
                 android:padding="20sp"
+                android:tag="0"
                 tools:ignore="ImageContrastCheck" />
 
             <ImageView
@@ -61,7 +63,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:contentDescription="@string/img2"
+                android:onClick="playerTap"
                 android:padding="20sp"
+                android:tag="1"
                 tools:ignore="ImageContrastCheck" />
 
             <ImageView
@@ -70,7 +74,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:contentDescription="@string/img3"
+                android:onClick="playerTap"
                 android:padding="20sp"
+                android:tag="2"
                 tools:ignore="ImageContrastCheck,ImageContrastCheck" />
         </LinearLayout>
 
@@ -86,7 +92,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:contentDescription="@string/img4"
+                android:onClick="playerTap"
                 android:padding="20sp"
+                android:tag="3"
                 tools:ignore="ImageContrastCheck" />
 
             <ImageView
@@ -95,7 +103,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:contentDescription="@string/img5"
+                android:onClick="playerTap"
                 android:padding="20sp"
+                android:tag="4"
                 tools:ignore="ImageContrastCheck" />
 
             <ImageView
@@ -104,7 +114,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:contentDescription="@string/img6"
+                android:onClick="playerTap"
                 android:padding="20sp"
+                android:tag="5"
                 tools:ignore="ImageContrastCheck" />
         </LinearLayout>
 
@@ -120,7 +132,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:contentDescription="@string/img7"
+                android:onClick="playerTap"
                 android:padding="20sp"
+                android:tag="6"
                 tools:ignore="ImageContrastCheck" />
 
             <ImageView
@@ -129,7 +143,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:contentDescription="@string/img8"
+                android:onClick="playerTap"
                 android:padding="20sp"
+                android:tag="7"
                 tools:ignore="ImageContrastCheck" />
 
             <ImageView
@@ -138,7 +154,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:contentDescription="@string/img9"
+                android:onClick="playerTap"
                 android:padding="20sp"
+                android:tag="8"
                 tools:ignore="ImageContrastCheck" />
         </LinearLayout>
 
