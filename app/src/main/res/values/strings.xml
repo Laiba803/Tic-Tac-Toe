@@ -4,4 +4,13 @@
     <string name="grid">game grid</string>
     <string name="cross">our cross</string>
     <string name="circle">our circle</string>
+    <string name="img1">image1</string>
+    <string name="img2">image2</string>
+    <string name="img3">image3</string>
+    <string name="img4">image4</string>
+    <string name="img5">image5</string>
+    <string name="img6">image6</string>
+    <string name="img7">image7</string>
+    <string name="img8">image8</string>
+    <string name="img9">image9</string>
 </resources>
