@@ -23,11 +23,11 @@ public class MainActivity extends AppCompatActivity {
             {0,3,6},{1,4,7},{2,5,8},
             {0,4,8},{2,4,6}};
     public void playerTap(View view){
-            ImageView img = (ImageView) view;
-            int tappedImage = Integer.parseInt(img.getTag().toString());
-            if (!gameActive) {
-                gameReset(view);
-            }
+        ImageView img = (ImageView) view;
+        int tappedImage = Integer.parseInt(img.getTag().toString());
+        if (!gameActive) {
+            gameReset(view);
+        }
         if(counter == 0) {
             counter=1;
         }
@@ -52,14 +52,29 @@ public class MainActivity extends AppCompatActivity {
                 if (gameState[winPos[0]] == gameState[winPos[1]] &&
                         gameState[winPos[1]] == gameState[winPos[2]] &&
                         gameState[winPos[0]] != 2) {
-                    String winner;
+                    String winnerStr;
                     gameActive = false;
                     if (gameState[winPos[0]] == 0)
-                        winner = "X has won the match";
+                        winnerStr = "X has won the match";
                     else
-                        winner = "O has won the match";
+                        winnerStr = "O has won the match";
                     TextView status = findViewById(R.id.Status);
-                    status.setText(winner);
+                    status.setText(winnerStr);
+                    break;
+                }
+                else{
+                    int draw=0;
+                    for (int state: gameState){
+                        if(state == 2)
+                            draw++;
+                    }
+                    if(draw == 0){
+                        String winnerStr;
+                        winnerStr = "match draw";
+                        TextView status = findViewById(R.id.Status);
+                        status.setText(winnerStr);
+                        gameActive = false;
+                    }
                 }
             }
         }
