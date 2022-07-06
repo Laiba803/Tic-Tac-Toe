@@ -13,4 +13,10 @@
     <string name="img7">image7</string>
     <string name="img8">image8</string>
     <string name="img9">image9</string>
+    <string name="score1">0</string>
+    <string name="score2">0</string>
+    <string name="refresh">Refresh</string>
+    <string name="player1">X-score:</string>
+    <string name="player2">O-score:</string>
+    <string name="x_s_turn_tap_to_play">X\'s Turn - Tap to play</string>
 </resources>

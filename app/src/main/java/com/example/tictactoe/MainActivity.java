@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     int counter=1;
+    int score_X=0;
+    int score_O=0;
     boolean gameActive = true;
     // Player representation
     // 0 - X
@@ -22,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     int[][] winPositions={{0,1,2},{3,4,5},{6,7,8},
             {0,3,6},{1,4,7},{2,5,8},
             {0,4,8},{2,4,6}};
+
     public void playerTap(View view){
         ImageView img = (ImageView) view;
         int tappedImage = Integer.parseInt(img.getTag().toString());
@@ -54,12 +57,20 @@ public class MainActivity extends AppCompatActivity {
                         gameState[winPos[0]] != 2) {
                     String winnerStr;
                     gameActive = false;
-                    if (gameState[winPos[0]] == 0)
+                    if (gameState[winPos[0]] == 0) {
                         winnerStr = "X has won the match";
-                    else
+                        score_X++;
+                    }
+                    else {
                         winnerStr = "O has won the match";
+                        score_O++;
+                    }
                     TextView status = findViewById(R.id.Status);
                     status.setText(winnerStr);
+                    TextView score_1 = findViewById(R.id.score1);
+                    TextView score_2 = findViewById(R.id.score2);
+                    score_1.setText(String.valueOf(score_X));
+                    score_2.setText(String.valueOf(score_O));
                     break;
                 }
                 else{
@@ -99,6 +110,15 @@ public class MainActivity extends AppCompatActivity {
         TextView status = findViewById(R.id.Status);
         status.setText("X's Turn - Tap to play");
         counter=0;
+    }
+
+    public void refreshClick(View view){
+        TextView score_1 = findViewById(R.id.score1);
+        TextView score_2 = findViewById(R.id.score2);
+        score_O = 0;
+        score_X = 0;
+        score_1.setText(String.valueOf(score_X));
+        score_2.setText(String.valueOf(score_O));
     }
 
     @Override
